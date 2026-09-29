@@ -1109,12 +1109,13 @@
       letter-spacing: 0.16em;
       text-align: left;
       text-transform: uppercase;
-      cursor: not-allowed;
-      opacity: 0.76;
+      cursor: pointer;
+      opacity: 0.92;
+      text-decoration: none;
     }
 
     .placeholder-cta::after {
-      content: "Soon";
+      content: "Visit";
       padding: 5px 8px;
       color: #050505;
       background: var(--dialog-color);
@@ -1678,7 +1679,7 @@
         </figure>
       </header>
       <div class="detail-body" id="detail-body"></div>
-      <button class="placeholder-cta" type="button" disabled>Your website link will go here</button>
+      <a class="placeholder-cta" id="website-cta" href="https://thefreedomagent.com" target="_blank" rel="noopener noreferrer">Visit The Freedom Agent website</a>
     </div>
   </dialog>
 

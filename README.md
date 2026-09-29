@@ -1,4 +1,4 @@
-# PACT Community presentation
+# The Freedom Agent presentation
 
 This folder contains the revised static presentation site.
 
@@ -24,7 +24,7 @@ Edit `index.html` for layout, copy, styling, and interactions. Keep images in `a
 
 The `main` branch is connected to the production site on Vercel. Changes merged or pushed to `main` publish automatically after Vercel finishes its deployment checks.
 
-The presentation keeps PACT at the center with six supporting programs and 23 smaller perimeter bubbles that summarize what comes included:
+The presentation keeps The Freedom Agent at the center with six supporting programs and 23 smaller perimeter bubbles that summarize what comes included:
 
 - Next Level Agents
 - GSD Mode

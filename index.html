@@ -1691,6 +1691,8 @@
           kicker: 'The complete ecosystem',
           intro: ['A connected community built to help real estate agents create more opportunity, build a stronger business, and gain more freedom in their lives.'],
           points: ['Opportunity', 'Growth', 'Community', 'Freedom'],
+          website: 'https://thefreedomagent.com',
+          websiteLabel: 'Visit The Freedom Agent website',
           color: '#d4a742',
           rgb: '212, 167, 66'
         },
@@ -1722,6 +1724,8 @@
             'You get access to the coaching and the community.'
           ],
           points: ['Coaching', 'Mastery Bootcamp', 'Community'],
+          website: 'https://www.gsdmode.com/',
+          websiteLabel: 'Visit GSD Mode website',
           media: 'assets/gsd-mode.png',
           mediaAlt: 'Joshua Smith in front of the GSD Mode community and podcast wall',
           embed: {
@@ -2094,6 +2098,10 @@
       const openExplorer = (key) => {
         const resource = resources[key];
         if (!resource) return;
+
+        const websiteCta = document.getElementById('website-cta');
+        websiteCta.href = resource.website || 'https://thefreedomagent.com';
+        websiteCta.textContent = resource.websiteLabel || 'Visit The Freedom Agent website';
 
         explorer.style.setProperty('--dialog-color', resource.color);
         explorer.style.setProperty('--dialog-rgb', resource.rgb);

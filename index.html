@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="description" content="Explore the complete The Freedom Agent ecosystem — ">
+  <meta name="description" content="The Freedom Agent helps real estate agents build a stronger business, create leverage, and own more of their time.">
   <meta name="theme-color" content="#050505">
-  <title>The Freedom Agent — Everything Included</title>
+  <title>The Freedom Agent — Build the Business. Own Your Time.</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23050505'/%3E%3Cpath d='M14 14h24c9 0 14 5 14 13S47 40 38 40H26v10H14V14Zm12 9v8h11c3 0 5-1 5-4s-2-4-5-4H26Z' fill='white'/%3E%3Cpath d='M10 29h22l-6 9H10Z' fill='%231b84e8'/%3E%3C/svg%3E">
   <style>
     :root {
@@ -1507,13 +1507,228 @@
         transition: none !important;
       }
     }
+
+    .landing {
+      position: relative;
+      overflow: hidden;
+      background: #050505;
+    }
+    .landing-hero {
+      position: relative;
+      display: grid;
+      min-height: 100svh;
+      place-items: center;
+      padding: 110px 24px 80px;
+      text-align: center;
+      isolation: isolate;
+    }
+    .landing-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      background:
+        radial-gradient(circle at 50% 32%, rgba(212,167,66,.23), transparent 24rem),
+        radial-gradient(circle at 18% 72%, rgba(78,155,197,.10), transparent 22rem),
+        linear-gradient(180deg,#070707 0%,#020202 100%);
+    }
+    .landing-hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      opacity: .28;
+      background-image:
+        linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),
+        linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);
+      background-size: 72px 72px;
+      mask-image: linear-gradient(to bottom,#000,transparent 88%);
+    }
+    .hero-inner { width:min(1120px,100%); margin:auto; }
+    .hero-kicker,.story-kicker {
+      margin:0 0 22px;
+      color:var(--gold-bright);
+      font-family:"Courier New",monospace;
+      font-size:.72rem;
+      font-weight:900;
+      letter-spacing:.24em;
+      text-transform:uppercase;
+    }
+    .landing-hero h1 {
+      max-width:1000px;
+      margin:0 auto;
+      color:#fff;
+      font-size:clamp(4rem,11vw,9.5rem);
+      font-weight:950;
+      letter-spacing:-.075em;
+      line-height:.78;
+      text-transform:uppercase;
+    }
+    .landing-hero h1 span { display:block; color:var(--gold-bright); }
+    .hero-copy {
+      max-width:720px;
+      margin:34px auto 0;
+      color:rgba(255,255,255,.68);
+      font-size:clamp(1.05rem,1.8vw,1.35rem);
+      line-height:1.65;
+    }
+    .hero-actions {
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:12px;
+      margin-top:34px;
+    }
+    .hero-action {
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:54px;
+      padding:14px 22px;
+      color:#050505;
+      background:var(--gold-bright);
+      border:1px solid var(--gold-bright);
+      border-radius:999px;
+      font-family:"Courier New",monospace;
+      font-size:.74rem;
+      font-weight:900;
+      letter-spacing:.12em;
+      text-decoration:none;
+      text-transform:uppercase;
+    }
+    .hero-action.secondary {
+      color:#fff;
+      background:transparent;
+      border-color:rgba(255,255,255,.28);
+    }
+    .story-section {
+      width:min(1180px,calc(100% - 40px));
+      margin:0 auto;
+      padding:clamp(82px,11vw,150px) 0;
+      border-top:1px solid rgba(255,255,255,.08);
+    }
+    .story-section.centered { text-align:center; }
+    .story-section h2 {
+      max-width:940px;
+      margin:0 auto;
+      color:#fff;
+      font-size:clamp(2.8rem,7vw,6.4rem);
+      font-weight:950;
+      letter-spacing:-.065em;
+      line-height:.9;
+      text-transform:uppercase;
+    }
+    .story-lede {
+      max-width:760px;
+      margin:28px auto 0;
+      color:#98989d;
+      font-size:clamp(1rem,1.7vw,1.22rem);
+      line-height:1.75;
+    }
+    .freedom-grid {
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:16px;
+      margin-top:52px;
+      text-align:left;
+    }
+    .freedom-card {
+      min-height:330px;
+      padding:34px;
+      background:linear-gradient(155deg,rgba(212,167,66,.09),rgba(255,255,255,.018) 48%,rgba(255,255,255,.01));
+      border:1px solid rgba(212,167,66,.22);
+      border-radius:24px;
+    }
+    .freedom-card span {
+      color:var(--gold-bright);
+      font-family:"Courier New",monospace;
+      font-size:.72rem;
+      font-weight:900;
+      letter-spacing:.18em;
+    }
+    .freedom-card h3 {
+      margin:70px 0 14px;
+      color:#fff;
+      font-size:clamp(1.8rem,3vw,2.8rem);
+      letter-spacing:-.05em;
+      line-height:.95;
+      text-transform:uppercase;
+    }
+    .freedom-card p { margin:0; color:#96969b; line-height:1.7; }
+    .included-intro {
+      padding:clamp(90px,12vw,160px) 24px 42px;
+      text-align:center;
+      background:linear-gradient(180deg,#050505,#080704);
+    }
+    .included-intro h2 {
+      max-width:1000px;
+      margin:0 auto;
+      color:#fff;
+      font-size:clamp(3.2rem,8vw,7rem);
+      font-weight:950;
+      letter-spacing:-.07em;
+      line-height:.84;
+      text-transform:uppercase;
+    }
+    .included-intro p:last-child {
+      max-width:700px;
+      margin:24px auto 0;
+      color:#99999e;
+      font-size:1.08rem;
+      line-height:1.7;
+    }
+    #everything-included { scroll-margin-top:20px; }
+    @media (max-width: 760px) {
+      .landing-hero { min-height:92svh; padding-top:82px; }
+      .freedom-grid { grid-template-columns:1fr; }
+      .freedom-card { min-height:250px; }
+      .freedom-card h3 { margin-top:42px; }
+      .presentation { display:none; }
+      .mobile-stack { display:block; }
+    }
   </style>
 </head>
 <body>
   <h1 class="sr-only">The Freedom Agent Interactive Mind Map</h1>
 
   <main>
-    <section class="presentation" aria-label="The Freedom Agent interactive mind map">
+    <section class="landing">
+      <section class="landing-hero">
+        <div class="hero-inner">
+          <p class="hero-kicker">For real estate agents who want more than another brokerage</p>
+          <h1>The Freedom <span>Agent</span></h1>
+          <p class="hero-copy">Build the business. Own your time. Create your freedom. The Freedom Agent brings together the systems, coaching, lead generation, community, and ownership opportunities designed to help you build a business that serves your life—not the other way around.</p>
+          <div class="hero-actions">
+            <a class="hero-action" href="#everything-included">See everything included</a>
+            <a class="hero-action secondary" href="https://thefreedomagent.com" target="_blank" rel="noopener noreferrer">Visit The Freedom Agent</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="story-section centered">
+        <p class="story-kicker">The goal is not just more transactions</p>
+        <h2>Success should create more freedom—not less.</h2>
+        <p class="story-lede">A bigger business is only better when it gives you more control, more options, and more ownership. The Freedom Agent is built around helping agents create predictable production without sacrificing the life they are working so hard to build.</p>
+      </section>
+
+      <section class="story-section centered">
+        <p class="story-kicker">Build differently</p>
+        <h2>Three freedoms. One business.</h2>
+        <div class="freedom-grid">
+          <article class="freedom-card"><span>01 / BUSINESS</span><h3>Production Freedom</h3><p>Build a predictable pipeline with better lead generation, stronger conversion, coaching, training, and systems that keep working even when you are busy serving clients.</p></article>
+          <article class="freedom-card"><span>02 / TIME</span><h3>Time Freedom</h3><p>Create leverage through technology, automation, community, and proven processes so growth does not require you to personally carry every part of the business.</p></article>
+          <article class="freedom-card"><span>03 / OWNERSHIP</span><h3>Financial Freedom</h3><p>Think beyond the next commission check. Build multiple income opportunities, ownership, and a business designed to expand what is possible for you and your family.</p></article>
+        </div>
+      </section>
+
+      <section class="included-intro">
+        <p class="story-kicker">The Freedom Agent ecosystem</p>
+        <h2>And this is what comes included.</h2>
+        <p>Explore every part of the platform below. Click a circle to see the coaching, technology, lead generation, brokerage benefits, and communities available to you.</p>
+      </section>
+    </section>
+
+    <section class="presentation" id="everything-included" aria-label="The Freedom Agent interactive mind map">
       <div class="topline" aria-hidden="true">
         <span class="topline-mark">THE FREEDOM AGENT</span>
         <p><strong>Everything comes included</strong>Explore the complete agent ecosystem</p>
@@ -1629,9 +1844,9 @@
       </div>
     </section>
 
-    <section class="mobile-stack" aria-label="Explore everything included with PACT">
+    <section class="mobile-stack" aria-label="Explore everything included with The Freedom Agent">
       <div class="mobile-brand">
-        <img src="assets/pact.jpg" alt="PACT — ">
+        <div class="hero-kicker">The Freedom Agent</div>
       </div>
       <h2>Everything<br>Comes Included</h2>
       <p class="mobile-intro">Explore each part of the community without leaving this page</p>
